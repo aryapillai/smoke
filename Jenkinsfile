@@ -32,7 +32,7 @@ pipeline {
            steps {
 
                sh '''
-               docker run -d --name smoke-test2 -p 8086:80 smoke-demo
+               docker run -d --name smoke-test2 -p 8087:80 smoke-demo
                '''
 
            }
@@ -46,7 +46,7 @@ pipeline {
                sh '''
                sleep 5
 
-               curl http://localhost:8086
+               curl http://localhost:8087
                '''
 
            }
