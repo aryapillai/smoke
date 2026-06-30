@@ -46,7 +46,7 @@ pipeline {
                sh '''
                sleep 5
 
-               curl http://localhost:8080
+               curl http://localhost:8086
                '''
 
            }
@@ -58,8 +58,8 @@ pipeline {
            steps {
 
                sh '''
-               docker stop smoke-test
-               docker rm smoke-test
+               docker stop smoke-test1
+               docker rm smoke-test1
                '''
 
            }
