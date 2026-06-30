@@ -32,7 +32,7 @@ pipeline {
            steps {
 
                sh '''
-               docker run -d --name smoke-test2 -p 8087:80 smoke-demo
+               docker run -d --name smoke-test3 -p 8087:80 smoke-demo
                '''
 
            }
@@ -58,8 +58,8 @@ pipeline {
            steps {
 
                sh '''
-               docker stop smoke-test2
-               docker rm smoke-test2
+               docker stop smoke-test3
+               docker rm smoke-test3
                '''
 
            }
